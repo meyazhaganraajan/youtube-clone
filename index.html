@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube-Clone</title>
+    <link rel="icon" href="https://www.youtube.com/s/desktop/cc9e7915/img/favicon.ico" type="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+        </div>
+        <img src="./images/youtube logo.svg" class="logo" alt="">
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="search">
+            <button class="search-btn"><img src="https://img.icons8.com/ios-glyphs/344/search--v1.png" alt="search"></button>
+        </div>
+        <button class="voice-btn"><img src="https://img.icons8.com/sf-ultralight-filled/344/microphone.png" alt="voice search"></button>
+        <div class="user-options">
+            <a href="https://studio.youtube.com/channel/UCBxaIfg1ZBIGSzrTKPhAa0w/videos?d=ud" class="create"><img src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/344/external-create-multimedia-anggara-basic-outline-anggara-putra.png" class="icon" alt=""></a>
+            <a href="https://www.google.co.in/intl/en/about/products?tab=wh" class="create"><img src="./images/menu.png" class="icon" alt="menu"></a>
+            <img src="https://img.icons8.com/windows/344/appointment-reminders--v1.png" class="icon" alt="reminder">
+            <div class="user-dp">
+                <img src="./images/profile.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div class="side-bar" >
+        <a href="#" class="links active"><img src="https://img.icons8.com/ios-filled/344/home.png" alt="">Home</a>
+        <a href="https://www.youtube.com/feed/explore" class="links"><img src="https://img.icons8.com/external-thin-kawalan-studio/344/external-explore-social-media-thin-kawalan-studio.png" alt="">Explore</a>
+        <a href="https://www.youtube.com/shorts/S5aZE8d-1lw" class="links"><img src="./images/youtube shorts.svg" alt="">Shorts</a>
+        <a href="https://www.youtube.com/feed/subscriptions" class="links"><img src="https://img.icons8.com/ios/344/video-playlist.png" alt="">Subscriptions</a>
+        <hr class="seperator">
+        <a href="https://www.youtube.com/feed/library" class="links"><img src="https://img.icons8.com/puffy/344/experimental-video-playlist-puffy.png" alt="">Library</a>
+        <a href="https://www.youtube.com/feed/history" class="links"><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/344/external-history-instagram-flatart-icons-outline-flatarticons.png" alt="">History</a>
+        <a href="#" class="links"><img src="https://img.icons8.com/fluency-systems-regular/344/video-clip.png" alt="">Your Video</a>
+        <a href="https://www.youtube.com/playlist?list=WL" class="links"><img src="https://img.icons8.com/material-outlined/344/clock--v1.png" alt="">Watch Later</a>
+        <a href="https://www.youtube.com/playlist?list=LL" class="links"><img src="./images/like.png" alt="">Liked Video</a>
+        <a href="#" class="links"><img src="https://img.icons8.com/external-those-icons-lineal-those-icons/344/external-down-arrows-those-icons-lineal-those-icons-1.png" alt="">Show More</a>
+        <hr class="seperator">
+        <a href="https://www.youtube.com/feed/channels" class="links"><b>SUBSCRIPTIONS</b></a>
+        <hr class="seperator">
+    </div>
+
+    <!-- filters -->
+    <div class="filters">
+        <button class="filter-options active" onclick="display('all')">all</button>
+        <button class="filter-options" onclick="display('react JS')">React JS</button>
+        <button class="filter-options" onclick="display('web development')">web development</button>
+        <button class="filter-options" onclick="display('html CSS')">Html CSS</button>
+        <button class="filter-options" onclick="display('entertainment')" >entertainment</button>
+        <button class="filter-options"  onclick="display('learing')" >learning</button>
+        <button class="filter-options"  onclick="display('javascript')">javascript</button>
+        <button class="filter-options"  onclick="display('Music')"  >Music</button>
+        <button class="filter-options" onclick="display('Gaming')"  >Gaming</button>
+        <button class="filter-options"  onclick="display('Live news')" >Live</button>
+    </div>
+
+    <div class="video-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
